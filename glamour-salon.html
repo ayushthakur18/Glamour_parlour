@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Glamour — Luxury Beauty Salon</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=DM+Sans:wght@300;400;500;600&family=Cormorant+Garamond:ital,wght@0,300;0,600;1,300&family=Bebas+Neue&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="glamour-salon.css">
+</head>
+<body>
+
+<!-- ───── NAVBAR ───── -->
+<nav id="navbar">
+  <div class="nav-logo">Glamour<span>✦</span></div>
+  <ul class="nav-links">
+    <li><a href="#about">About</a></li>
+    <li><a href="#services">Services</a></li>
+    <li><a href="#offers">Offers</a></li>
+    <li><a href="#team">Artists</a></li>
+    <li><a href="#gallery">Gallery</a></li>
+    <li><a href="#contact">Contact</a></li>
+    <li><a href="#booking" class="nav-cta">Book Now →</a></li>
+  </ul>
+</nav>
+
+<!-- ───── HERO ───── -->
+<section class="hero">
+  <!-- Lily background decoration -->
+  <img src="images/hero-lily.jpeg" class="hero-lily hero-lily-1" alt="">
+  <img src="images/hero-lily.jpeg" class="hero-lily hero-lily-2" alt="">
+  <div class="hero-text">
+    <div class="hero-badge">Est. 2015 — Pune, India</div>
+    <h1 class="hero-title">
+      Your beauty,
+      <em>your choice</em>
+      <span class="big-text">GLAMOUR</span>
+    </h1>
+    <p class="hero-sub">Every visit is a transformation. We blend artistry, innovation, and luxury in every service — because you deserve nothing less.</p>
+    <div class="hero-actions">
+      <a href="#booking" class="btn-primary"><span>Book Appointment</span> <span>→</span></a>
+      <button class="btn-secondary" onclick="document.getElementById('offers').scrollIntoView({behavior:'smooth'})">View Offers ↓</button>
+    </div>
+    <div class="hero-stats">
+      <div class="stat-item">
+        <div class="stat-num">10+</div>
+        <div class="stat-label">Years</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-num">50K+</div>
+        <div class="stat-label">Clients</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-num">4.9★</div>
+        <div class="stat-label">Rating</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-num">15</div>
+        <div class="stat-label">Artists</div>
+      </div>
+    </div>
+  </div>
+  <div class="hero-visual">
+    <div class="hero-img-wrap">
+      <img src="images/hero-model.jpeg" alt="Glamour Salon Model" style="width:100%;height:100%;object-fit:cover;object-position:center top;">
+    </div>
+    <div class="hero-float-card card-1">
+      <div class="float-card-title">Today's Booking</div>
+      <div class="float-card-val">24 slots</div>
+      <div class="float-card-sub">⚡ 6 left today</div>
+    </div>
+    <div class="hero-float-card card-2">
+      <div class="float-card-title">Happy Clients</div>
+      <div class="float-card-val">50,000+</div>
+      <div class="float-card-sub">★ 4.9 avg rating</div>
+    </div>
+  </div>
+</section>
+
+<!-- ───── COUNTDOWN BANNER ───── -->
+<div class="countdown-banner">
+  <div class="countdown-left">
+    <div class="countdown-tag">✦ Limited Time Offer</div>
+    <div class="countdown-title">Get <span>30% OFF</span> on Bridal Packages</div>
+  </div>
+  <div class="countdown-timer">
+    <div class="timer-block"><span class="timer-num" id="t-h">08</span><span class="timer-label">Hours</span></div>
+    <div class="timer-sep">:</div>
+    <div class="timer-block"><span class="timer-num" id="t-m">24</span><span class="timer-label">Mins</span></div>
+    <div class="timer-sep">:</div>
+    <div class="timer-block"><span class="timer-num" id="t-s">00</span><span class="timer-label">Secs</span></div>
+  </div>
+  <div class="countdown-right">
+    <button class="countdown-offer-badge" onclick="document.getElementById('offers').scrollIntoView({behavior:'smooth'})">Claim Offer →</button>
+  </div>
+</div>
+
+<!-- ───── ABOUT ───── -->
+<section class="about" id="about">
+  <div class="about-visual">
+    <div class="about-img-main">
+      <img src="images/about-main.jpeg" alt="About Glamour Salon" style="width:100%;height:100%;object-fit:cover;object-position:center top;">
+    </div>
+    <div class="about-img-float">
+      <img src="images/about-float.jpeg" alt="Beauty Treatment" style="width:100%;height:100%;object-fit:cover;object-position:center top;">
+    </div>
+    <div class="about-years-badge">
+      <span class="years-num">10</span>
+      <span class="years-text">Years</span>
+    </div>
+  </div>
+  <div class="about-content">
+    <span class="about-label">About us — What we do</span>
+    <h2 class="about-title">Crafting beauty<br>with <em>passion</em></h2>
+    <p class="about-body">Glamour Salon was founded 10 years ago with one mission — to make every woman feel like royalty. We blend artistry, innovation, and luxury in every service we offer. Our team is passionate about futurism and modern beauty, and we bring this passion to life with every transformation.</p>
+    <p class="about-body">Together we explore the future of beauty and functionality, creating experiences that will become your most cherished memories. From skincare to bridal transformations — every service at Glamour is a masterpiece.</p>
+    <a href="#services" class="btn-primary"><span>Explore Services →</span></a>
+  </div>
+</section>
+
+<!-- ───── SERVICES ───── -->
+<section class="services" id="services">
+  <div class="section-header">
+    <span class="section-tag">✦ What we offer</span>
+    <h2 class="section-title">Our <em>Services</em></h2>
+    <p class="section-sub">Premium beauty services crafted with the finest techniques and luxury products for results that last.</p>
+  </div>
+  <div class="services-grid">
+    <div class="service-card">
+      <span class="service-arrow">→</span>
+      <span class="service-icon">✨</span>
+      <div class="service-name">Skin Care</div>
+      <p class="service-desc">Advanced facials, glow treatments, anti-aging rituals and customized skin therapy for every skin type.</p>
+      <span class="service-price">From ₹799</span>
+    </div>
+    <div class="service-card">
+      <span class="service-arrow">→</span>
+      <span class="service-icon">💄</span>
+      <div class="service-name">Makeup</div>
+      <p class="service-desc">Bridal, party, editorial and everyday makeup by certified makeup artists using luxury brands.</p>
+      <span class="service-price">From ₹1,299</span>
+    </div>
+    <div class="service-card">
+      <span class="service-arrow">→</span>
+      <span class="service-icon">💇‍♀️</span>
+      <div class="service-name">Hair Treatments</div>
+      <p class="service-desc">Keratin, balayage, Brazilian blowouts, hair spas and precision cuts by senior stylists.</p>
+      <span class="service-price">From ₹999</span>
+    </div>
+    <div class="service-card">
+      <span class="service-arrow">→</span>
+      <span class="service-icon">💅</span>
+      <div class="service-name">Nail Art</div>
+      <p class="service-desc">Gel nails, nail art extensions, French manicure, pedicure spa and custom nail designs.</p>
+      <span class="service-price">From ₹499</span>
+    </div>
+  </div>
+</section>
+
+<!-- ───── OFFERS ───── -->
+<section class="offers" id="offers">
+  <div class="section-header" style="position:relative;z-index:2;">
+    <span class="section-tag">✦ Exclusive</span>
+    <h2 class="section-title">New <em>Offers</em></h2>
+    <p class="section-sub">Our most sought-after services — curated for the modern woman who deserves the very best.</p>
+  </div>
+  <div class="offer-tabs">
+    <button class="offer-tab active">Trending</button>
+    <button class="offer-tab">Bestsellers</button>
+    <button class="offer-tab">Staff Picks</button>
+  </div>
+  <div class="offers-grid">
+    <div class="offer-card">
+      <div class="offer-card-img" style="overflow:hidden;padding:0;"><img src="images/rose-facial.jpeg" alt="Rose Glow Facial" style="width:100%;height:100%;object-fit:cover;border-radius:18px;"></div>
+      <span class="offer-badge">✦ ECO Friendly</span>
+      <div class="offer-name">Rose Glow Facial</div>
+      <p class="offer-desc">Deep hydration facial with organic rose extracts, vitamin C serum and LED therapy for instant glow.</p>
+      <div class="offer-footer">
+        <div class="offer-price">
+          <span class="original">₹1,999</span>
+          ₹1,299
+        </div>
+        <button class="btn-offer" onclick="openModal('booking-modal')">Book Now →</button>
+      </div>
+    </div>
+    <div class="offer-card">
+      <div class="offer-card-img" style="overflow:hidden;padding:0;"><img src="images/bridal-offer.jpeg" alt="Bridal Makeup" style="width:100%;height:100%;object-fit:cover;object-position:center top;border-radius:18px;"></div>
+      <span class="offer-badge">✦ Premium</span>
+      <div class="offer-name">Bridal Makeup Package</div>
+      <p class="offer-desc">Full bridal glam package — pre-bridal skin prep, HD makeup, hairstyling, nail art and touch-up kit.</p>
+      <div class="offer-footer">
+        <div class="offer-price">
+          <span class="original">₹7,999</span>
+          ₹4,999
+        </div>
+        <button class="btn-offer" onclick="openModal('booking-modal')">Book Now →</button>
+      </div>
+    </div>
+    <div class="offer-card">
+      <div class="offer-card-img" style="overflow:hidden;padding:0;"><img src="images/keratin-hair.jpeg" alt="Keratin Hair Spa" style="width:100%;height:100%;object-fit:cover;border-radius:18px;"></div>
+      <span class="offer-badge">✦ Bestseller</span>
+      <div class="offer-name">Keratin Hair Spa</div>
+      <p class="offer-desc">Intensive keratin treatment with deep conditioning hair spa — smooth, frizz-free locks for 3 months.</p>
+      <div class="offer-footer">
+        <div class="offer-price">
+          <span class="original">₹3,499</span>
+          ₹2,499
+        </div>
+        <button class="btn-offer" onclick="openModal('booking-modal')">Book Now →</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ───── BEFORE & AFTER ───── -->
+<section class="before-after" id="gallery">
+  <div class="section-header">
+    <span class="section-tag">✦ Real Results</span>
+    <h2 class="section-title">Before <em>& After</em></h2>
+    <p class="section-sub">Drag the slider to see the incredible transformations our clients experience at Glamour.</p>
+  </div>
+  <div class="ba-grid">
+    <div class="ba-card">
+      <div class="ba-slider-wrap" style="aspect-ratio:1/1;">
+        <div class="ba-img ba-after" style="background:none;"><img src="images/ba-1.jpeg" alt="Makeup Transformation 1" style="width:100%;height:100%;object-fit:cover;object-position:center top;"></div>
+        <div style="position:absolute;top:16px;left:16px;z-index:5;"><span class="ba-tag">Before</span></div>
+        <div style="position:absolute;top:16px;right:16px;z-index:5;"><span class="ba-tag after">After</span></div>
+        <div class="ba-label"><div class="ba-service">Makeup Transformation</div><div class="ba-result">Party Glam Makeup</div></div>
+      </div>
+    </div>
+    <div class="ba-card">
+      <div class="ba-slider-wrap" style="aspect-ratio:1/1;">
+        <div class="ba-img ba-after" style="background:none;"><img src="images/ba-2.jpeg" alt="Makeup Transformation 2" style="width:100%;height:100%;object-fit:cover;object-position:center top;"></div>
+        <div style="position:absolute;top:16px;left:16px;z-index:5;"><span class="ba-tag">Before</span></div>
+        <div style="position:absolute;top:16px;right:16px;z-index:5;"><span class="ba-tag after">After</span></div>
+        <div class="ba-label"><div class="ba-service">Glam Makeover</div><div class="ba-result">HD Makeup + Hair Styling</div></div>
+      </div>
+    </div>
+    <div class="ba-card">
+      <div class="ba-slider-wrap" style="aspect-ratio:1/1;">
+        <div class="ba-img ba-after" style="background:none;"><img src="images/ba-3.jpeg" alt="Makeup Transformation 3" style="width:100%;height:100%;object-fit:cover;object-position:center top;"></div>
+        <div style="position:absolute;top:16px;left:16px;z-index:5;"><span class="ba-tag">Before</span></div>
+        <div style="position:absolute;top:16px;right:16px;z-index:5;"><span class="ba-tag after">After</span></div>
+        <div class="ba-label"><div class="ba-service">Bridal Glam</div><div class="ba-result">Full Bridal Makeup Package</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ───── TEAM ───── -->
+<section class="team" id="team">
+  <div class="section-header">
+    <span class="section-tag">✦ Our Experts</span>
+    <h2 class="section-title">Meet Our <em>Artists</em></h2>
+    <p class="section-sub">15 certified beauty experts, each with a unique specialty and years of transformative experience.</p>
+  </div>
+  <div class="team-grid">
+    <div class="team-card">
+      <div class="team-img">
+        <div class="team-img-bg c1" style="background:none;"><img src="images/team-1.jpeg" alt="Priya Sharma" style="width:100%;height:100%;object-fit:cover;transition:transform 0.5s ease;"></div>
+        <div class="team-overlay">
+          <div class="team-name">Priya Sharma</div>
+          <div class="team-role">Senior Skin Expert</div>
+          <div class="team-exp">8 years experience</div>
+        </div>
+        <div class="team-social">
+          <div class="team-social-btn" onclick="openModal('insta-modal')">📸</div>
+          <div class="team-social-btn" onclick="openModal('whatsapp-modal')">💬</div>
+        </div>
+      </div>
+    </div>
+    <div class="team-card">
+      <div class="team-img">
+        <div class="team-img-bg c2" style="background:none;"><img src="images/team-2.jpeg" alt="Lara Mehta" style="width:100%;height:100%;object-fit:cover;transition:transform 0.5s ease;"></div>
+        <div class="team-overlay">
+          <div class="team-name">Lara Mehta</div>
+          <div class="team-role">Bridal Makeup Artist</div>
+          <div class="team-exp">10 years experience</div>
+        </div>
+        <div class="team-social">
+          <div class="team-social-btn" onclick="openModal('insta-modal')">📸</div>
+          <div class="team-social-btn" onclick="openModal('whatsapp-modal')">💬</div>
+        </div>
+      </div>
+    </div>
+    <div class="team-card">
+      <div class="team-img">
+        <div class="team-img-bg c3" style="background:none;"><img src="images/team-3.jpeg" alt="Masha Singh" style="width:100%;height:100%;object-fit:cover;transition:transform 0.5s ease;"></div>
+        <div class="team-overlay">
+          <div class="team-name">Masha Singh</div>
+          <div class="team-role">Hair Colour Specialist</div>
+          <div class="team-exp">6 years experience</div>
+        </div>
+        <div class="team-social">
+          <div class="team-social-btn" onclick="openModal('insta-modal')">📸</div>
+          <div class="team-social-btn" onclick="openModal('whatsapp-modal')">💬</div>
+        </div>
+      </div>
+    </div>
+    <div class="team-card">
+      <div class="team-img">
+        <div class="team-img-bg c4" style="background:none;"><img src="images/team-4.jpeg" alt="Neha Kapoor" style="width:100%;height:100%;object-fit:cover;transition:transform 0.5s ease;"></div>
+        <div class="team-overlay">
+          <div class="team-name">Neha Kapoor</div>
+          <div class="team-role">Nail Art Designer</div>
+          <div class="team-exp">5 years experience</div>
+        </div>
+        <div class="team-social">
+          <div class="team-social-btn" onclick="openModal('insta-modal')">📸</div>
+          <div class="team-social-btn" onclick="openModal('whatsapp-modal')">💬</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ───── INSTAGRAM FEED WALL ───── -->
+<section class="insta-wall" id="instagram">
+  <div class="insta-header">
+    <div class="insta-handle">
+      <div class="insta-icon-wrap">📸</div>
+      <div>
+        <div class="insta-username">@glamour<span>salon</span></div>
+        <div style="font-size:12px;color:var(--text-mid);">128.4K followers · Follow us for daily inspiration</div>
+      </div>
+    </div>
+    <button class="insta-follow-btn" onclick="openModal('insta-modal')">View Profile →</button>
+  </div>
+  <div class="insta-grid">
+    <div class="insta-post p2" onclick="openModal('insta-modal')"><div class="insta-post-inner" style="padding:0;"><img src="images/insta-4.jpeg" style="width:100%;height:100%;object-fit:cover;" alt="Salon Session"><span class="insta-post-label">Behind The Scenes</span></div></div>
+    <div class="insta-post p3" onclick="openModal('insta-modal')"><div class="insta-post-inner" style="padding:0;"><img src="images/insta-3.jpeg" style="width:100%;height:100%;object-fit:cover;" alt="Ring Light Setup"><span class="insta-post-label">Artist Setup</span></div></div>
+    <div class="insta-post p4" onclick="openModal('insta-modal')"><div class="insta-post-inner" style="padding:0;"><img src="images/insta-5.jpeg" style="width:100%;height:100%;object-fit:cover;" alt="Luxury Products"><span class="insta-post-label">Luxury Products</span></div></div>
+    <div class="insta-post p5" onclick="openModal('insta-modal')"><div class="insta-post-inner" style="padding:0;"><img src="images/insta-1.jpeg" style="width:100%;height:100%;object-fit:cover;" alt="Salon Interior"><span class="insta-post-label">Our Salon</span></div></div>
+    <div class="insta-post p6" onclick="openModal('insta-modal')"><div class="insta-post-inner" style="padding:0;"><img src="images/insta-2.jpeg" style="width:100%;height:100%;object-fit:cover;" alt="Glamour Vibes"><span class="insta-post-label">Glamour Vibes</span></div></div>
+  </div>
+</section>
+
+<!-- ───── TESTIMONIALS ───── -->
+<section class="testimonials">
+  <div class="section-header">
+    <span class="section-tag">✦ Client Love</span>
+    <h2 class="section-title">What they <em>say</em></h2>
+    <p class="section-sub">Over 50,000 happy clients — here are just a few of their beautiful experiences.</p>
+  </div>
+  <div class="testi-grid">
+    <div class="testi-card">
+      <div class="testi-stars">★★★★★</div>
+      <div class="testi-quote">"</div>
+      <p class="testi-text">Priya completely transformed my skin in just two sessions. The Rose Glow Facial is absolutely magical — I've never felt more confident in my own skin.</p>
+      <div class="testi-author">
+        <div class="testi-avatar av1">A</div>
+        <div><div class="testi-name">Ananya Desai</div><div class="testi-service">Rose Glow Facial</div></div>
+      </div>
+    </div>
+    <div class="testi-card">
+      <div class="testi-stars">★★★★★</div>
+      <div class="testi-quote">"</div>
+      <p class="testi-text">I trusted Lara for my bridal makeup and she exceeded every expectation. On the most important day of my life, I looked and felt like an absolute queen.</p>
+      <div class="testi-author">
+        <div class="testi-avatar av2">R</div>
+        <div><div class="testi-name">Ritika Agarwal</div><div class="testi-service">Bridal Package</div></div>
+      </div>
+    </div>
+    <div class="testi-card">
+      <div class="testi-stars">★★★★★</div>
+      <div class="testi-quote">"</div>
+      <p class="testi-text">The keratin hair spa by Masha is life-changing. My hair has never been this smooth, this shiny. I've been coming to Glamour for 5 years and never looking back!</p>
+      <div class="testi-author">
+        <div class="testi-avatar av3">S</div>
+        <div><div class="testi-name">Sneha Kulkarni</div><div class="testi-service">Keratin Hair Spa</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ───── SOCIAL CONNECT ───── -->
+<section class="social-connect" id="connect">
+  <div class="section-header">
+    <span class="section-tag">✦ Connect With Us</span>
+    <h2 class="section-title">Stay <em>Connected</em></h2>
+    <p class="section-sub">Follow us for daily beauty inspo, offers and behind-the-scenes magic. Or just say hi!</p>
+  </div>
+  <div class="social-grid">
+    <div class="social-card insta" onclick="openModal('insta-modal')">
+      <span class="social-big-icon">📸</span>
+      <div class="social-card-title">Instagram</div>
+      <p class="social-card-desc">128.4K followers. Daily looks, tutorials, offers and salon stories.</p>
+      <button class="social-card-btn insta-btn">Follow on Instagram ↗</button>
+    </div>
+    <div class="social-card twitter" onclick="openModal('twitter-modal')">
+      <span class="social-big-icon">🐦</span>
+      <div class="social-card-title">Twitter / X</div>
+      <p class="social-card-desc">Flash sales, beauty tips and real-time updates — all on X.</p>
+      <button class="social-card-btn twitter-btn">Follow on Twitter ↗</button>
+    </div>
+    <div class="social-card whatsapp" onclick="openModal('whatsapp-modal')">
+      <span class="social-big-icon">💬</span>
+      <div class="social-card-title">WhatsApp</div>
+      <p class="social-card-desc">Book instantly or ask us anything directly on WhatsApp.</p>
+      <button class="social-card-btn whatsapp-btn">Chat on WhatsApp ↗</button>
+    </div>
+  </div>
+</section>
+
+<!-- ───── BOOKING ───── -->
+<section class="booking" id="booking">
+  <div class="booking-grid">
+    <div class="booking-info">
+      <div class="section-header" style="text-align:left">
+        <span class="section-tag">✦ Reserve Your Spot</span>
+        <h2 class="section-title">Book an <em>Appointment</em></h2>
+        <p class="section-sub">Simple, quick and instant. Choose your service and we'll confirm within minutes.</p>
+      </div>
+      <div class="booking-highlights">
+        <div class="booking-highlight">
+          <span class="highlight-icon">⚡</span>
+          <div class="highlight-text"><strong>Instant Confirmation</strong>Get confirmed within minutes</div>
+        </div>
+        <div class="booking-highlight">
+          <span class="highlight-icon">🏆</span>
+          <div class="highlight-text"><strong>Expert Artists</strong>15 certified specialists</div>
+        </div>
+        <div class="booking-highlight">
+          <span class="highlight-icon">💎</span>
+          <div class="highlight-text"><strong>Premium Products</strong>Only luxury brands</div>
+        </div>
+        <div class="booking-highlight">
+          <span class="highlight-icon">🔄</span>
+          <div class="highlight-text"><strong>Free Rescheduling</strong>Cancel up to 2 hours before</div>
+        </div>
+      </div>
+    </div>
+    <div class="booking-form">
+      <div class="form-title">Book My Appointment ✦</div>
+      <div class="form-row">
+        <div class="form-group"><label class="form-label">Full Name</label><input class="form-input" type="text" placeholder="Your name"></div>
+        <div class="form-group"><label class="form-label">Phone</label><input class="form-input" type="tel" placeholder="+91 00000 00000"></div>
+      </div>
+      <div class="form-group"><label class="form-label">Select Service</label>
+        <select class="form-select">
+          <option>Rose Glow Facial — ₹1,299</option>
+          <option>Bridal Makeup Package — ₹4,999</option>
+          <option>Keratin Hair Spa — ₹2,499</option>
+          <option>Skin Care Treatment — from ₹799</option>
+          <option>Nail Art — from ₹499</option>
+          <option>Hair Colouring — from ₹999</option>
+        </select>
+      </div>
+      <div class="form-row">
+        <div class="form-group"><label class="form-label">Date</label><input class="form-input" type="date"></div>
+        <div class="form-group"><label class="form-label">Time</label>
+          <select class="form-select">
+            <option>10:00 AM</option><option>11:00 AM</option><option>12:00 PM</option>
+            <option>2:00 PM</option><option>3:00 PM</option><option>4:00 PM</option><option>5:00 PM</option>
+          </select>
+        </div>
+      </div>
+      <div class="form-group"><label class="form-label">Special Requests</label><textarea class="form-textarea" placeholder="Any preferences, allergies or notes..."></textarea></div>
+      <button class="form-submit" onclick="showToast('✨ Appointment booked! We\'ll confirm shortly.')">Book My Appointment →</button>
+    </div>
+  </div>
+</section>
+
+<!-- ───── QUERY ───── -->
+<section class="query" id="contact">
+  <div class="query-wrap">
+    <div class="section-header">
+      <span class="section-tag">✦ Get in Touch</span>
+      <h2 class="section-title">Have a <em>Query?</em></h2>
+      <p class="section-sub">We'd love to hear from you. Drop us a message and our team will get back to you within 24 hours.</p>
+    </div>
+    <div class="query-form">
+      <div class="query-row">
+        <div class="form-group"><label class="form-label">Name</label><input class="form-input" type="text" placeholder="Your name"></div>
+        <div class="form-group"><label class="form-label">Email</label><input class="form-input" type="email" placeholder="you@email.com"></div>
+      </div>
+      <div class="form-group"><label class="form-label">Message</label><textarea class="form-textarea" style="height:120px" placeholder="What would you like to know?"></textarea></div>
+      <button class="query-submit" onclick="showToast('💌 Query sent! We\'ll reply within 24 hours.')">Send Query →</button>
+    </div>
+  </div>
+</section>
+
+<!-- ───── FOOTER ───── -->
+<footer>
+  <div class="footer-top">
+    <div>
+      <div class="footer-logo">Glamour<span>✦</span></div>
+      <p class="footer-about">Pune's premier luxury beauty salon since 2015. Transforming beauty, one appointment at a time. Every client leaves feeling like royalty.</p>
+      <div class="footer-socials">
+        <a class="footer-social-btn" onclick="openModal('insta-modal')">📸</a>
+        <a class="footer-social-btn" onclick="openModal('twitter-modal')">🐦</a>
+        <a class="footer-social-btn" onclick="openModal('whatsapp-modal')">💬</a>
+      </div>
+    </div>
+    <div>
+      <div class="footer-col-title">Services</div>
+      <ul class="footer-links">
+        <li><a href="#">Skin Care</a></li>
+        <li><a href="#">Makeup</a></li>
+        <li><a href="#">Hair Treatments</a></li>
+        <li><a href="#">Nail Art</a></li>
+        <li><a href="#">Bridal Packages</a></li>
+      </ul>
+    </div>
+    <div>
+      <div class="footer-col-title">Quick Links</div>
+      <ul class="footer-links">
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#team">Our Artists</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#booking">Book Now</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+    <div>
+      <div class="footer-col-title">Visit Us</div>
+      <ul class="footer-links">
+        <li><a href="#">📍 Shop 12, Koregaon Park, Pune</a></li>
+        <li><a href="#">📞 +91 98765 43210</a></li>
+        <li><a href="#">✉️ hello@glamoursalon.in</a></li>
+        <li><a href="#">🕐 Mon–Sat: 9AM–8PM</a></li>
+        <li><a href="#">🕐 Sun: 10AM–6PM</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span class="footer-est">Est. 2015 · Pune, India · 10 Years of Beauty</span>
+    <span class="footer-copy">© 2025 Glamour Salon. All rights reserved.</span>
+  </div>
+</footer>
+
+<!-- ───── MODALS ───── -->
+
+<!-- Instagram Modal -->
+<div class="modal-overlay" id="insta-modal" onclick="closeOnOverlay(event, 'insta-modal')">
+  <div class="modal-box">
+    <div class="modal-close">
+      <span class="modal-title">📸 glamoursalon</span>
+      <button class="modal-close-btn" onclick="closeModal('insta-modal')">✕</button>
+    </div>
+    <div class="modal-body">
+      <div class="ig-profile">
+        <div class="ig-avatar">G✦</div>
+        <div class="ig-stats">
+          <div class="ig-stat"><span class="ig-stat-num">847</span><span class="ig-stat-label">posts</span></div>
+          <div class="ig-stat"><span class="ig-stat-num">128.4K</span><span class="ig-stat-label">followers</span></div>
+          <div class="ig-stat"><span class="ig-stat-num">312</span><span class="ig-stat-label">following</span></div>
+        </div>
+      </div>
+      <div class="ig-name">Glamour Salon ✦</div>
+      <div class="ig-bio">Beauty is our language 💄✨<br>Skin Care · Makeup · Hair · Nails<br>📍 Koregaon Park, Pune · Est. 2015<br>👇 Book your appointment below</div>
+      <a href="https://wa.me/919876543210" class="ig-link">🔗 www.glamoursalon.in</a>
+      <button class="ig-follow-big">Follow</button>
+      <div class="ig-posts-grid">
+        <div class="ig-post-thumb" style="padding:0;overflow:hidden;border-radius:4px;"><img src="images/ig-thumb-1.jpg" style="width:100%;height:100%;object-fit:cover;" alt="post1"></div>
+        <div class="ig-post-thumb" style="padding:0;overflow:hidden;border-radius:4px;"><img src="images/ig-thumb-2.jpg" style="width:100%;height:100%;object-fit:cover;" alt="post2"></div>
+        <div class="ig-post-thumb" style="padding:0;overflow:hidden;border-radius:4px;"><img src="images/ig-thumb-3.jpg" style="width:100%;height:100%;object-fit:cover;" alt="post3"></div>
+        <div class="ig-post-thumb" style="padding:0;overflow:hidden;border-radius:4px;"><img src="images/ig-thumb-4.jpg" style="width:100%;height:100%;object-fit:cover;" alt="post4"></div>
+        <div class="ig-post-thumb" style="padding:0;overflow:hidden;border-radius:4px;"><img src="images/ig-thumb-5.jpg" style="width:100%;height:100%;object-fit:cover;" alt="post5"></div>
+        <div class="ig-post-thumb" style="padding:0;overflow:hidden;border-radius:4px;"><img src="images/ig-thumb-6.jpg" style="width:100%;height:100%;object-fit:cover;" alt="post6"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Twitter Modal -->
+<div class="modal-overlay" id="twitter-modal" onclick="closeOnOverlay(event, 'twitter-modal')">
+  <div class="modal-box">
+    <div class="modal-close">
+      <span class="modal-title">🐦 @GlamourSalon</span>
+      <button class="modal-close-btn" onclick="closeModal('twitter-modal')">✕</button>
+    </div>
+    <div class="modal-body" style="padding:0">
+      <div class="tw-header-img"></div>
+      <div class="tw-avatar-wrap" style="display:flex;justify-content:space-between;align-items:flex-end;padding:0 16px;margin-bottom:10px;">
+        <div class="tw-avatar">G✦</div>
+        <button class="tw-follow-btn">Follow</button>
+      </div>
+      <div style="padding:0 16px 16px">
+        <div class="tw-name">Glamour Salon ✦</div>
+        <div class="tw-handle">@GlamourSalon · Pune, India</div>
+        <div class="tw-bio">Pune's premier luxury beauty salon ✨ Skin Care | Makeup | Hair | Nails 💄 Est. 2015 · 10 years of transformations 📍 Koregaon Park</div>
+        <div class="tw-stats">
+          <div class="tw-stat"><strong>312</strong> Following</div>
+          <div class="tw-stat"><strong>48.2K</strong> Followers</div>
+        </div>
+      </div>
+      <div class="tw-tweet">
+        <div class="tw-tweet-text">🌸 FLASH SALE ALERT! 30% OFF on all bridal packages this weekend. Limited slots — book now via our website! #GlamourSalon #BridalMakeup #PuneSalon</div>
+        <div class="tw-tweet-meta">2:30 PM · Mar 14, 2026</div>
+        <div class="tw-tweet-actions"><span>❤️ 847</span><span>🔁 312</span><span>💬 96</span></div>
+      </div>
+      <div class="tw-tweet">
+        <div class="tw-tweet-text">✨ Pro tip: Always cleanse + tone + moisturize BEFORE your appointment. Your skin absorbs treatments 3x better on a clean base! Tried it? Tell us below 👇 #SkincareTips</div>
+        <div class="tw-tweet-meta">10:15 AM · Mar 13, 2026</div>
+        <div class="tw-tweet-actions"><span>❤️ 1.2K</span><span>🔁 524</span><span>💬 143</span></div>
+      </div>
+      <div class="tw-tweet">
+        <div class="tw-tweet-text">🏆 10 YEARS of Glamour! 🎉 To celebrate our 10th anniversary we're giving away 10 FREE Rose Glow Facials. RT + Follow to enter! #Giveaway #GlamourAt10</div>
+        <div class="tw-tweet-meta">9:00 AM · Mar 12, 2026</div>
+        <div class="tw-tweet-actions"><span>❤️ 3.4K</span><span>🔁 2.1K</span><span>💬 428</span></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- WhatsApp Modal -->
+<div class="modal-overlay" id="whatsapp-modal" onclick="closeOnOverlay(event, 'whatsapp-modal')">
+  <div class="modal-box" style="overflow:hidden;padding:0">
+    <div style="position:absolute;top:14px;right:14px;z-index:10">
+      <button class="modal-close-btn" onclick="closeModal('whatsapp-modal')" style="background:rgba(255,255,255,0.2);color:white;">✕</button>
+    </div>
+    <div class="wa-header">
+      <div class="wa-avatar">G✦</div>
+      <div class="wa-info">
+        <div class="wa-name">Glamour Salon ✦</div>
+        <div class="wa-status">🟢 Online · Typically replies instantly</div>
+      </div>
+    </div>
+    <div class="wa-chat">
+      <div class="wa-bubble">
+        👋 Hi! Welcome to <strong>Glamour Salon</strong>!<br><br>
+        We're delighted to have you here. How can we help you today?
+        <div class="wa-bubble-time">9:41 AM ✓✓</div>
+      </div>
+      <div class="wa-bubble">
+        💄 Our services include:<br>
+        • Skin Care from ₹799<br>
+        • Makeup from ₹1,299<br>
+        • Hair Spa from ₹999<br>
+        • Nail Art from ₹499<br><br>
+        Tap below to book your appointment! ✨
+        <div class="wa-bubble-time">9:41 AM ✓✓</div>
+      </div>
+    </div>
+    <div class="wa-footer">
+      <a href="https://wa.me/919876543210?text=Hi!%20I'd%20like%20to%20book%20an%20appointment%20at%20Glamour%20Salon" target="_blank" style="text-decoration:none">
+        <button class="wa-book-btn">💬 Start Chat — Book Now →</button>
+      </a>
+    </div>
+  </div>
+</div>
+
+<!-- Toast -->
+<div class="toast" id="toast">✦ Action confirmed!</div>
+
+<script src="glamour-salon.js"></script>
+</body>
+</html>
